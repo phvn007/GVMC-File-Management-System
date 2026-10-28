@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <!-- Paths for circular text -->
+    <path id="top-curve" d="M 120,250 A 130,130 0 0,1 380,250" />
+    <path id="bottom-curve" d="M 380,260 A 130,130 0 0,1 120,260" />
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15803d" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Gold and Blue Rings -->
+  <circle cx="250" cy="250" r="230" fill="#1e3a8a" />
+  <circle cx="250" cy="250" r="220" fill="#f8fafc" />
+  <circle cx="250" cy="250" r="170" fill="url(#greenGrad)" />
+  <circle cx="250" cy="250" r="170" fill="none" stroke="#ca8a04" stroke-width="6" />
+  <circle cx="250" cy="250" r="230" fill="none" stroke="#ca8a04" stroke-width="8" />
+  
+  <!-- Curved Typography -->
+  <text font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#1e3a8a" letter-spacing="2">
+    <textPath href="#top-curve" startOffset="50%" text-anchor="middle">GREATER VISAKHAPATNAM</textPath>
+  </text>
+  <text font-family="Arial, sans-serif" font-size="26" font-weight="900" fill="#1e3a8a" letter-spacing="1">
+    <textPath href="#bottom-curve" startOffset="50%" text-anchor="middle">MUNICIPAL CORPORATION</textPath>
+  </text>
+  
+  <!-- Center Graphic: Municipal Building / Dome -->
+  <g transform="translate(130, 120)">
+    <!-- Spire -->
+    <path d="M117 30 L117 10 L123 10 L123 30 Z" fill="#fef08a" />
+    <!-- Dome -->
+    <path d="M70 90 C70 30 170 30 170 90 Z" fill="#fef08a" />
+    <path d="M90 90 C90 40 150 40 150 90 Z" fill="#ca8a04" />
+    <!-- Roof Base -->
+    <rect x="60" y="90" width="120" height="12" fill="#ca8a04" />
+    <!-- Pediment -->
+    <polygon points="50,120 190,120 170,102 70,102" fill="#fef08a" />
+    <!-- Pillars -->
+    <rect x="70" y="120" width="14" height="45" fill="#fef08a" />
+    <rect x="100" y="120" width="14" height="45" fill="#fef08a" />
+    <rect x="126" y="120" width="14" height="45" fill="#fef08a" />
+    <rect x="156" y="120" width="14" height="45" fill="#fef08a" />
+    <!-- Foundation -->
+    <rect x="50" y="165" width="140" height="12" fill="#ca8a04" />
+    
+    <!-- GVMC Acronym inside the green circle -->
+    <text x="120" y="215" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="3">GVMC</text>
+  </g>
+</svg>

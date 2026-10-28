@@ -89,6 +89,7 @@ export default function App() {
           const promptId = prompt('Enter File / Application Number (e.g. GVMC/TP/2026/08942):', 'GVMC/TP/2026/08942');
           if (promptId) handleDirectTrackFile(promptId);
         }}
+        
       />
 
       {/* Direct Search Notification Message Toast */}
